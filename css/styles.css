@@ -1,0 +1,49 @@
+.header {
+    display: grid;
+    width: 1200px;
+    min-height: 120px;
+    /*grid-template-areas:
+      "logo  nav";
+    grid-template-columns: 1fr 1fr;*/
+    background-color: #6490f5;
+  }
+
+#page {
+    display: grid;
+    width: 1200px;
+    min-height: 400px;
+    grid-template-areas:
+      "main  aside";
+    grid-template-columns: 1000px 1fr;
+  }
+  
+ 
+  #page > main {
+    grid-area: main;
+    background-color: #567bd1;
+  }
+  
+  #page > aside {
+    grid-area: aside;
+    background-color: #4563a8;
+  }
+  
+  #footer {
+    display: grid;
+    width: 1200px;
+    min-height: 80px;
+    max-height: 80px;
+    grid-template-areas:
+      "footer1 footer2";
+    grid-template-columns: 600px 1fr;
+  }
+
+  #footer > footer1 {
+    grid-area: footer1;
+    background-color: #344b80;
+  }
+  #footer > footer2 {
+    grid-area: footer2;
+    background-color: #243357;
+  }
+  
